@@ -13,10 +13,161 @@
     />
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>All photos</h1>
-      <button class="btn btn-primary">Save to collection</button>
-    </div>
+    <header>
+      <nav class="navbar navbar-text">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Photos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Videos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Podcasts</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control"
+                  id="search-input"
+                  placeholder="Search for anything..."
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  English
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                </ul>
+              </div>
+              <a href="#">Sign in</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container mx-auto">
+      <div class="row justify-content-between">
+        <div class="col-3">
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary">All photos</button>
+            <button class="btn">Selfies</button>
+            <button class="btn">Recent</button>
+            <button class="btn">Deleted</button>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="row justify-content-between">
+            <div class="col">
+              <h1>All photos</h1>
+              <span><b class="text-secondary">150 items</b></span>
+            </div>
+            <div class="col">
+              <div class="btn-group" role="group" aria-label="Sort">
+                <button type="button" class="btn btn-dark">Newest</button>
+                <button type="button" class="btn btn-outline">Latest</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="card">
+                <img
+                  src="./assets/thumbnail_01.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h2 class="card-title">Heading</h2>
+                  <p class="text-secondary">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button class="btn btn-primary">Save to collection</button>
+                  <button class="btn btn-secondary">Share</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <img
+                  src="./assets/thumbnail_02.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h2 class="card-title">Heading</h2>
+                  <p class="text-secondary">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button class="btn btn-primary">Save to collection</button>
+                  <button class="btn btn-secondary">Share</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <img
+                  src="./assets/thumbnail_03.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h2 class="card-title">Heading</h2>
+                  <p class="text-secondary">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button class="btn btn-primary">Save to collection</button>
+                  <button class="btn btn-secondary">Share</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <img
+                  src="./assets/thumbnail_04.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h2 class="card-title">Heading</h2>
+                  <p class="text-secondary">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button class="btn btn-primary">Save to collection</button>
+                  <button class="btn btn-secondary">Share</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
