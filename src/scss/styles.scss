@@ -36,6 +36,7 @@ $dj-background: #f3f3f3;
 // Toggle global options
 $enable-gradients: false;
 $enable-shadows: false;
+$enable-negative-margins: true;
 
 // Rewrite default variables
 $gray-100: #eee;
@@ -78,7 +79,7 @@ $h6-font-size: $font-size-base;
 // @import "bootstrap/scss/tables";
 @import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
-// @import "bootstrap/scss/transitions";
+@import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
 @import "bootstrap/scss/button-group";
 @import "bootstrap/scss/nav";
@@ -126,10 +127,6 @@ $h6-font-size: $font-size-base;
 
 a {
   text-decoration: none;
-}
-
-.dropdown-toggle {
-  font-weight: 500;
 }
 
 .card {
