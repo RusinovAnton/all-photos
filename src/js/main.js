@@ -8,6 +8,9 @@ import { ThemeToggle } from "./theme-toggle.js";
 const showMoreCollection = document.querySelectorAll(".card p");
 new ShowMore(showMoreCollection);
 
+const themeToggle = document.querySelectorAll(".theme-toggle");
+new ThemeToggle(themeToggle);
+
 // Easter egg 🤡
 const clickAudio = document.getElementById("click-audio");
 clickAudio.volume = 0.33;

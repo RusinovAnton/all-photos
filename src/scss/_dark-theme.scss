@@ -62,4 +62,48 @@
   .h6 {
     color: #fff;
   }
+
+  .navbar-toggler-icon {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf8, %3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
+.theme-toggle {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 0.1em;
+  width: 3.74rem;
+
+  svg {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+}
+
+.theme-toggle__button {
+  padding: 0 0.1em;
+}
+
+.theme-toggle__toggle-indicator {
+  position: absolute;
+  width: 1.7rem;
+  height: 1.7rem;
+  z-index: 1;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transition: left 0.3s ease-in-out;
+  background-color: #dddddd;
+
+  [data-bs-theme="light"] & {
+    left: 0;
+  }
+
+  [data-bs-theme="dark"] & {
+    left: 1.9rem;
+  }
 }
