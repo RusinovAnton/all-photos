@@ -1,11 +1,12 @@
 import "../scss/styles.scss";
 import "bootstrap";
 
-import { InfiniteScroll } from "./infinite-scroll.js";
 import { ShowMore } from "./show-more.js";
+import { InfiniteScroll } from "./infinite-scroll.js";
 import { ThemeToggle } from "./theme-toggle.js";
 
-const navbar = document.getElementById("navbar-collapsible");
+const showMoreCollection = document.querySelectorAll(".card p");
+new ShowMore(showMoreCollection);
 
 // Easter egg 🤡
 const clickAudio = document.getElementById("click-audio");
