@@ -30,6 +30,7 @@ $dj-secondary: #666;
 $dj-white: #fff;
 $dj-dark: #292929;
 $dj-border-color: #ebebeb;
+$dj-border-color-dark: darken($dj-border-color, 50%);
 $dj-orange: #ed7135;
 $dj-background: #f3f3f3;
 
@@ -49,6 +50,9 @@ $text-muted: lighten(
 ); // since our body color is near to the Bootstraps's text-muted color
 
 $primary: $dj-orange;
+
+$primary-dark: lighten(desaturate($primary, 20%), 10%);
+
 $headings-font-weight: 700;
 $btn-font-weight: 700;
 
@@ -122,7 +126,11 @@ $h6-font-size: $font-size-base;
   --bs-link-color: var(--bs-body-color);
   --bs-link-hover-color: #{$primary};
 
-  --bs-border-color: #ebebeb;
+  --bs-border-color: #{$dj-border-color};
+}
+
+body {
+  transition: background-color 0.3s linear;
 }
 
 a {
@@ -151,10 +159,17 @@ a {
   --bs-btn-active-color: #fff;
   --bs-btn-hover-color: #fff;
   --bs-btn-focus-color: #fff;
+  --bs-border-color: var(--bs-btn-bg);
 }
 
 .btn-secondary,
 .btn-outline-secondary {
   --bs-btn-border-color: var(--bs-border-color);
-  color: #000;
+  --bs-btn-hover-border-color: var(--bs-btn-border-color);
+  --bs-btn-hover-bg: var(--bs-btn-border-color);
+  --bs-btn-active-bg: var(--bs-btn-border-color);
+  --bs-btn-focus-bg: var(--bs-btn-border-color);
+  color: $dark;
 }
+
+@import "dark-theme";
