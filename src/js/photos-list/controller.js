@@ -15,14 +15,14 @@ export class PhotosListController {
   loadData = throttle(this.handleLoadMore, 1000, this);
 
   #init = () => {
-    this.view = new PhotosListRenderer(this.loadMoreBtn, this.container);
+    this.view = new PhotosListRenderer(
+      this.loadMoreBtn,
+      this.container,
+      this.loadData.bind(this)
+    );
     this.api = new PhotosApi();
 
-    this.loadMoreBtn.addEventListener("click", () => {
-      this.loadData();
-    });
-
-    // Initial data request
+    // Initial data loading
     this.loadData();
   };
 
@@ -34,6 +34,7 @@ export class PhotosListController {
       data = response.data;
     } catch (error) {
       // TODO: handle server error
+      throw error;
     } finally {
       this.view.setLoadingState(false);
     }

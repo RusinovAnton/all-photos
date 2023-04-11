@@ -26,14 +26,18 @@ function getCardInnerHTML(src, title, description) {
 }
 
 export class PhotosListRenderer {
+  #initialIntersect = false;
   #container = null;
   #loadMoreBtn = null;
   #loadMoreBtnText = "";
+  #onLoadMore = () => {};
 
-  constructor(loadMoreBtn, photosContainerNode) {
+  constructor(loadMoreBtn, photosContainerNode, onLoadMore) {
     this.#container = photosContainerNode;
     this.#loadMoreBtn = loadMoreBtn;
     this.#loadMoreBtnText = loadMoreBtn.innerText;
+    this.#onLoadMore = onLoadMore || this.#onLoadMore;
+
     this.#init();
   }
 
@@ -82,7 +86,21 @@ export class PhotosListRenderer {
 
   #init = () => {
     this.clearContainer();
+    this.#loadMoreBtn.addEventListener("click", this.#onLoadMore);
+    const observer = new IntersectionObserver((event) => {
+      this.#handleIntersection(event);
+    });
+    observer.observe(this.#loadMoreBtn);
   };
+
+  #handleIntersection() {
+    if (!this.#initialIntersect) {
+      this.#initialIntersect = true;
+      return;
+    }
+
+    this.#onLoadMore();
+  }
 
   #makeCardsList = (data) => {
     const list = data.map(({ download_url, author, description }) => {
