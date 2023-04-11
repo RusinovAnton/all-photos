@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>All photos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      crossorigin
+      src="/all-photos/assets/index-10ba9b6b.js"
+    ></script>
+    <link rel="stylesheet" href="/all-photos/assets/index-cc29beb2.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        id="navbar-collapsible"
+        class="navbar navbar-nav navbar-expand-lg py-lg-0 border-bottom"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="#navbarToggler"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="navbarToggler" class="collapse navbar-collapse py-lg-0">
+            <div
+              class="row flex-grow-1 justify-content-between align-items-center d-none d-lg-flex"
+            >
+              <div class="col-lg-4">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link py-4 active fw-bold border-bottom border-primary border-2"
+                      aria-current="page"
+                      href="#"
+                      >Photos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-4" href="#">Videos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-4" href="#">Podcasts</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-8">
+                <div
+                  class="row justify-content-between align-items-center d-block d-lg-flex"
+                >
+                  <div class="col flex-grow-1">
+                    <div
+                      class="input-group search-input-group rounded-pill bg-light"
+                    >
+                      <div class="input-group-text border-0 bg-transparent">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20 20L16.05 16.05M18 11C18 14.866 14.866 18 11 18C7.13401 18 4 14.866 4 11C4 7.13401 7.13401 4 11 4C14.866 4 18 7.13401 18 11Z"
+                            stroke="#666666"
+                            f
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                        </svg>
+                      </div>
+                      <input
+                        type="search"
+                        class="form-control border-0 bg-transparent"
+                        id="search-input"
+                        placeholder="Search for anything..."
+                      />
+                    </div>
+                  </div>
+                  <div class="col flex-grow-0">
+                    <div class="dropdown">
+                      <button
+                        class="btn fw-normal d-flex align-items-center"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <span>English</span>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8 10L12 14L16 10"
+                            stroke="#666666"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                        </svg>
+                      </button>
+                      <ul class="dropdown-menu position-absolute">
+                        <li>
+                          <a class="dropdown-item" href="#">English</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">English</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">English</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col flex-grow-0 text-nowrap">
+                    <a href="#">Sign in</a>
+                  </div>
+
+                  <div class="col flex-grow-0">
+                    <div
+                      role="button"
+                      class="theme-toggle bg-light rounded-pill border"
+                    >
+                      <div
+                        class="theme-toggle__button theme-toggle--light"
+                        style="color: #ffc200"
+                      >
+                        <svg
+                          class="svg-icon"
+                          viewBox="0 0 1024 1024"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M512 256a42.666667 42.666667 0 0 0 42.666667-42.666667V128a42.666667 42.666667 0 0 0-85.333334 0v85.333333a42.666667 42.666667 0 0 0 42.666667 42.666667zM896 469.333333h-85.333333a42.666667 42.666667 0 0 0 0 85.333334h85.333333a42.666667 42.666667 0 0 0 0-85.333334zM256 512a42.666667 42.666667 0 0 0-42.666667-42.666667H128a42.666667 42.666667 0 0 0 0 85.333334h85.333333a42.666667 42.666667 0 0 0 42.666667-42.666667zM265.386667 213.333333a42.666667 42.666667 0 0 0-59.306667 62.72l61.44 59.306667a42.666667 42.666667 0 0 0 31.146667 11.946667 42.666667 42.666667 0 0 0 30.72-13.226667 42.666667 42.666667 0 0 0 0-60.16zM725.333333 347.306667a42.666667 42.666667 0 0 0 29.44-11.946667l61.44-59.306667A42.666667 42.666667 0 0 0 758.613333 213.333333l-61.44 60.586667a42.666667 42.666667 0 0 0 0 60.16 42.666667 42.666667 0 0 0 28.16 13.226667zM512 768a42.666667 42.666667 0 0 0-42.666667 42.666667v85.333333a42.666667 42.666667 0 0 0 85.333334 0v-85.333333a42.666667 42.666667 0 0 0-42.666667-42.666667zM756.48 688.64a42.666667 42.666667 0 0 0-59.306667 61.44L758.613333 810.666667a42.666667 42.666667 0 0 0 29.44 11.946666 42.666667 42.666667 0 0 0 30.72-12.8 42.666667 42.666667 0 0 0 0-60.586666zM267.52 688.64l-61.44 59.306667a42.666667 42.666667 0 0 0 0 60.586666 42.666667 42.666667 0 0 0 30.72 12.8 42.666667 42.666667 0 0 0 28.586667-10.666666l61.44-59.306667a42.666667 42.666667 0 0 0-59.306667-61.44zM512 341.333333a170.666667 170.666667 0 1 0 170.666667 170.666667 170.666667 170.666667 0 0 0-170.666667-170.666667z"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="theme-toggle__button theme-toggle__dark"
+                        style="color: #00e1ff"
+                      >
+                        <svg
+                          class="svg-icon"
+                          viewBox="0 0 1024 1024"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M923.306667 554.666667a42.666667 42.666667 0 0 0-44.8-5.973334 343.466667 343.466667 0 0 1-143.786667 31.146667 347.733333 347.733333 0 0 1-347.306667-345.6 366.506667 366.506667 0 0 1 10.666667-85.333333A42.666667 42.666667 0 0 0 341.333333 100.693333a432.64 432.64 0 1 0 597.333334 498.773334 42.666667 42.666667 0 0 0-15.36-44.8z m-405.333334 285.44A347.306667 347.306667 0 0 1 302.08 222.72v11.52a433.066667 433.066667 0 0 0 432.64 432.64 417.706667 417.706667 0 0 0 89.6-9.386667 346.026667 346.026667 0 0 1-306.346667 184.32z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="theme-toggle__toggle-indicator"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-lg-none py-4">
+              <ul class="nav flex-column border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fw-bold bg-primary text-white rounded"
+                    aria-current="page"
+                    href="#"
+                    >Photos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Videos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Podcasts</a>
+                </li>
+              </ul>
+
+              <ul class="nav flex-column">
+                <li>
+                  <div class="dropdown">
+                    <button
+                      class="btn fw-normal d-flex align-items-center"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span>English</span>
+
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 10L12 14L16 10"
+                          stroke="#666666"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu position-absolute">
+                      <li>
+                        <a class="dropdown-item" href="#">English</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">English</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">English</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="nav-link" href="#">Sign in</a></li>
+                <li>
+                  <span class="nav-link">
+                    <div
+                      role="button"
+                      class="theme-toggle bg-light rounded-pill border"
+                    >
+                      <div
+                        class="theme-toggle__button theme-toggle--light"
+                        style="color: #ffc200"
+                      >
+                        <svg
+                          class="svg-icon"
+                          viewBox="0 0 1024 1024"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M512 256a42.666667 42.666667 0 0 0 42.666667-42.666667V128a42.666667 42.666667 0 0 0-85.333334 0v85.333333a42.666667 42.666667 0 0 0 42.666667 42.666667zM896 469.333333h-85.333333a42.666667 42.666667 0 0 0 0 85.333334h85.333333a42.666667 42.666667 0 0 0 0-85.333334zM256 512a42.666667 42.666667 0 0 0-42.666667-42.666667H128a42.666667 42.666667 0 0 0 0 85.333334h85.333333a42.666667 42.666667 0 0 0 42.666667-42.666667zM265.386667 213.333333a42.666667 42.666667 0 0 0-59.306667 62.72l61.44 59.306667a42.666667 42.666667 0 0 0 31.146667 11.946667 42.666667 42.666667 0 0 0 30.72-13.226667 42.666667 42.666667 0 0 0 0-60.16zM725.333333 347.306667a42.666667 42.666667 0 0 0 29.44-11.946667l61.44-59.306667A42.666667 42.666667 0 0 0 758.613333 213.333333l-61.44 60.586667a42.666667 42.666667 0 0 0 0 60.16 42.666667 42.666667 0 0 0 28.16 13.226667zM512 768a42.666667 42.666667 0 0 0-42.666667 42.666667v85.333333a42.666667 42.666667 0 0 0 85.333334 0v-85.333333a42.666667 42.666667 0 0 0-42.666667-42.666667zM756.48 688.64a42.666667 42.666667 0 0 0-59.306667 61.44L758.613333 810.666667a42.666667 42.666667 0 0 0 29.44 11.946666 42.666667 42.666667 0 0 0 30.72-12.8 42.666667 42.666667 0 0 0 0-60.586666zM267.52 688.64l-61.44 59.306667a42.666667 42.666667 0 0 0 0 60.586666 42.666667 42.666667 0 0 0 30.72 12.8 42.666667 42.666667 0 0 0 28.586667-10.666666l61.44-59.306667a42.666667 42.666667 0 0 0-59.306667-61.44zM512 341.333333a170.666667 170.666667 0 1 0 170.666667 170.666667 170.666667 170.666667 0 0 0-170.666667-170.666667z"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="theme-toggle__button theme-toggle__dark"
+                        style="color: #00e1ff"
+                      >
+                        <svg
+                          class="svg-icon"
+                          viewBox="0 0 1024 1024"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M923.306667 554.666667a42.666667 42.666667 0 0 0-44.8-5.973334 343.466667 343.466667 0 0 1-143.786667 31.146667 347.733333 347.733333 0 0 1-347.306667-345.6 366.506667 366.506667 0 0 1 10.666667-85.333333A42.666667 42.666667 0 0 0 341.333333 100.693333a432.64 432.64 0 1 0 597.333334 498.773334 42.666667 42.666667 0 0 0-15.36-44.8z m-405.333334 285.44A347.306667 347.306667 0 0 1 302.08 222.72v11.52a433.066667 433.066667 0 0 0 432.64 432.64 417.706667 417.706667 0 0 0 89.6-9.386667 346.026667 346.026667 0 0 1-306.346667 184.32z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="theme-toggle__toggle-indicator"></div></div
+                  ></span>
+                </li>
+              </ul>
+
+              <div class="input-group rounded-pill bg-light mt-4">
+                <div class="input-group-text border-0 bg-transparent">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 20L16.05 16.05M18 11C18 14.866 14.866 18 11 18C7.13401 18 4 14.866 4 11C4 7.13401 7.13401 4 11 4C14.866 4 18 7.13401 18 11Z"
+                      stroke="#666666"
+                      f
+                      stroke-width="2"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="search"
+                  class="form-control border-0 bg-transparent"
+                  id="search-input"
+                  placeholder="Search for anything..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto py-lg-5 py-4">
+      <div class="row justify-content-between">
+        <div class="col-lg-3">
+          <aside class="pb-lg-5 d-none d-lg-block">
+            <ul class="nav flex-lg-column fw-bold row">
+              <li class="nav-item col-lg-12 col-3">
+                <a
+                  class="nav-link active fw-bold d-flex align-items-center bg-primary text-white rounded d-block"
+                  aria-current="page"
+                  href="#"
+                >
+                  <svg
+                    class="me-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 6.5C13.6193 6.5 12.5 7.61929 12.5 9C12.5 10.3807 13.6193 11.5 15 11.5C16.3807 11.5 17.5 10.3807 17.5 9C17.5 7.61929 16.3807 6.5 15 6.5Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 3H21V21H18.5266L18.4945 21.0002H5.5L5.46787 21H3V3ZM19 12.8362C17.8552 13.898 16.7044 14.4537 15 14.4537C13.0944 14.4537 11.6208 13.2859 10.1527 11.7048C9.15108 10.6262 7.51491 10.4335 6.29018 11.25L6.26758 11.2651L5 12.2134V5H19V12.8362Z"
+                      fill="white"
+                    />
+                  </svg>
+                  All photos
+                </a>
+              </li>
+              <li class="nav-item col-lg-12 col-3">
+                <a class="nav-link d-flex align-items-center" href="#">
+                  <svg
+                    class="me-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.5 12C17.5 15.0376 15.0376 17.5 12 17.5C8.96243 17.5 6.5 15.0376 6.5 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                      stroke="#666666"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M11 9C11 9.82843 10.3284 10.5 9.5 10.5C8.67157 10.5 8 9.82843 8 9C8 8.17157 8.67157 7.5 9.5 7.5C10.3284 7.5 11 8.17157 11 9Z"
+                      fill="#666666"
+                    />
+                    <path
+                      d="M16 9C16 9.82843 15.3284 10.5 14.5 10.5C13.6716 10.5 13 9.82843 13 9C13 8.17157 13.6716 7.5 14.5 7.5C15.3284 7.5 16 8.17157 16 9Z"
+                      fill="#666666"
+                    />
+                  </svg>
+                  Selfies
+                </a>
+              </li>
+              <li class="nav-item col-lg-12 col-3">
+                <a class="nav-link d-flex align-items-center" href="#">
+                  <svg
+                    class="me-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 8V12L14.5 14.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                      stroke="#666666"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                  Recent
+                </a>
+              </li>
+              <li class="nav-item col-lg-12 col-3">
+                <a class="nav-link d-flex align-items-center" href="#">
+                  <svg
+                    class="me-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 21L5.00221 21.0665L5.06445 22H6V21ZM18 21V22H18.9356L18.9978 21.0665L18 21ZM3 5H2V7H3V5ZM21 7H22V5H21V7ZM11 11V10H9V11H11ZM9 16V17H11V16H9ZM15 11V10H13V11H15ZM13 16V17H15V16H13ZM4.00221 6.06652L5.00221 21.0665L6.99779 20.9335L5.99779 5.93348L4.00221 6.06652ZM6 22H18V20H6V22ZM18.9978 21.0665L19.9978 6.06652L18.0022 5.93348L17.0022 20.9335L18.9978 21.0665ZM19 5H5V7H19V5ZM3 7H5V5H3V7ZM19 7H21V5H19V7ZM9 11V16H11V11H9ZM13 11V16H15V11H13ZM12 4C13.3965 4 14.5725 4.95512 14.9055 6.24926L16.8424 5.75074C16.2874 3.59442 14.3312 2 12 2V4ZM9.09445 6.24926C9.42754 4.95512 10.6035 4 12 4V2C9.66883 2 7.71258 3.59442 7.15758 5.75074L9.09445 6.24926Z"
+                      fill="#666666"
+                    />
+                  </svg>
+                  Deleted
+                </a>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="dropdown d-lg-none pb-4">
+            <button
+              class="btn btn-primary d-flex align-items-center"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span>All photos</span>
+
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 10L12 14L16 10"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </svg>
+            </button>
+            <ul class="dropdown-menu position-absolute">
+              <li>
+                <a class="dropdown-item" href="#">Selfies</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Recent</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Deleted</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row justify-content-between align-items-center mb-4">
+            <div class="col">
+              <h1>All photos</h1>
+              <small><b>150 items</b></small>
+            </div>
+            <div class="col flex-grow-0">
+              <div class="btn-group" role="group" aria-label="Sort">
+                <button type="button" aria-current="sort" class="btn btn-dark">
+                  Newest
+                </button>
+                <button type="button" class="btn btn-outline-secondary">
+                  Latest
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gy-4 align-items-stretch" id="photos-list-container">
+            <div class="col-xl-6">
+              <div class="card h-100">
+                <img
+                  src="/all-photos/assets/thumbnail_01-d76024f4.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h2 class="card-title">Heading</h2>
+                  <p>
+                    Some quick span text to build on the card title and make up
+                    the bulk of the card's content. Some quick span text to
+                    build on the card title and make up the bulk of the card's
+                    content. Some quick span text to build on the card title and
+                    make up the bulk of the card's content. Some quick span text
+                    to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <button class="btn btn-primary me-3">
+                    Save to collection
+                  </button>
+                  <button class="btn btn-outline-secondary">Share</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="card h-100">
+                <img
+                  src="/all-photos/assets/thumbnail_02-8a90fdee.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h2 class="card-title">Heading</h2>
+                  <p>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <button class="btn btn-primary me-3">
+                    Save to collection
+                  </button>
+                  <button class="btn btn-outline-secondary">Share</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="card h-100">
+                <img
+                  src="/all-photos/assets/thumbnail_03-62f830ac.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h2 class="card-title">Heading</h2>
+                  <p>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <button class="btn btn-primary me-3">
+                    Save to collection
+                  </button>
+                  <button class="btn btn-outline-secondary">Share</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="card h-100">
+                <img
+                  src="/all-photos/assets/thumbnail_04-470f75b7.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h2 class="card-title">Heading</h2>
+                  <p>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent">
+                  <button class="btn btn-primary me-3">
+                    Save to collection
+                  </button>
+                  <button class="btn btn-outline-secondary">Share</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center py-3">
+            <div id="load-more" class="btn btn-primary btn-lg">Load more</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Downloaded for free from https://pixabay.com/ -->
+    <audio
+      class="visibility-hidden"
+      id="click-audio"
+      src="./assets/rclick.mp3"
+    ></audio>
+  </body>
+</html>
