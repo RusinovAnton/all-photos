@@ -15,16 +15,12 @@ stylesTemplate.innerHTML = `
   `;
 
 export class ShowMore {
-  constructor(collection) {
-    this.collection = collection;
+  constructor() {}
 
-    this.init();
-  }
+  initElements(collection) {
+    if (!collection?.length) return;
 
-  init() {
-    if (!this.collection?.length) return;
-
-    this.collection.forEach((node) => {
+    collection.forEach((node) => {
       const height = node.getBoundingClientRect().height;
       // TODO: improvement
       // if the font-size property of card body is changed this hardcoded property must be recalculated
@@ -44,6 +40,8 @@ export class ShowMore {
 
     const styleElement = stylesTemplate.content.cloneNode(true);
     document.body.appendChild(styleElement);
+
+    return true;
   }
 
   toggleShowMore(event) {
