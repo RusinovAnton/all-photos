@@ -1,3 +1,5 @@
+const htmlElement = document.getElementsByTagName("html")[0];
+
 export class ThemeToggle {
   constructor(toggleCollection) {
     this.toggleCollection = toggleCollection;
@@ -10,11 +12,31 @@ export class ThemeToggle {
         this.toggleTheme();
       });
     });
+
+    const initialColorTheme = window.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
+
+    this.changeTheme(initialColorTheme);
+
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (e) => {
+        const colorScheme = e.matches ? "dark" : "light";
+        this.changeTheme(colorScheme);
+      });
+  }
+
+  get colorScheme() {
+    return htmlElement.dataset.bsTheme;
+  }
+
+  changeTheme(colorScheme) {
+    htmlElement.dataset.bsTheme = colorScheme;
   }
 
   toggleTheme() {
-    const htmlElement = document.getElementsByTagName("html")[0];
-    htmlElement.dataset.bsTheme =
-      htmlElement.dataset.bsTheme === "dark" ? "light" : "dark";
+    this.changeTheme(this.colorScheme === "dark" ? "light" : "dark");
   }
 }
