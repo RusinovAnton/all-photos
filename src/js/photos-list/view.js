@@ -6,11 +6,9 @@ const cardTemplateBase = document.createElement("template");
 cardTemplateBase.innerHTML = `<div class="col-xl-6"><div class="card h-100"></div></div>`;
 
 function getCardInnerHTML(src, title, description) {
-  return `<img
-    src="${src}"
-    class="card-img-top"
-    alt="${title}"
-  />
+  return `<div class="ratio ratio-16x9">
+    <img src=${src} class="img-fluid rounded-top" alt="">
+  </div>
   <div class="card-body">
     <h2 class="card-title">${title}</h2>
     <p data-show-more="">
@@ -85,7 +83,7 @@ export class PhotosListRenderer {
   }
 
   #init = () => {
-    this.clearContainer();
+    showMorePlugin.initElements(this.#container.querySelectorAll(".card p"));
     this.#loadMoreBtn.addEventListener("click", this.#onLoadMore);
     const observer = new IntersectionObserver((event) => {
       this.#handleIntersection(event);
